@@ -20,7 +20,7 @@ class Url extends CI_Controller
 
 
             $ch = curl_init($url);
-            curl_setopt($ch, CURLOPT_NOBODY, false);    // we don't need body
+            curl_setopt($ch, CURLOPT_NOBODY, false);     
             curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
             curl_setopt($ch, CURLOPT_TIMEOUT, 10);
             $output = curl_exec($ch);
